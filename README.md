@@ -1,101 +1,105 @@
-# 🧮 Funções Matemáticas em JavaScript
+# 🚀 JavaScript – Estudos e Projetos
 
-## 📌 Descrição
+## 📌 Sobre o Repositório
 
-Este repositório contém um exercício introdutório em **JavaScript**, desenvolvido com o objetivo de praticar:
+Este repositório foi criado com o objetivo de **armazenar exercícios, estudos e pequenos projetos em JavaScript**, desenvolvidos ao longo do meu processo de aprendizado em programação.
 
-* Criação de funções tradicionais (`function`)
-* Uso de parâmetros e retorno de valores
-* Organização de código
-* Exibição de resultados no console
+Aqui você encontrará códigos focados em:
 
-O exercício é ideal para iniciantes que estão dando os primeiros passos na linguagem.
+* Lógica de programação
+* Funções
+* Estruturas de controle
+* Boas práticas de escrita de código
+* Conceitos fundamentais do JavaScript
+
+O repositório é atualizado conforme a evolução dos estudos.
 
 ---
 
-## 🎯 Objetivo do Exercício
+## 🎯 Objetivo
 
-Criar cinco funções:
-
-1. **Soma** – recebe dois números e retorna a soma
-2. **Subtrai** – recebe dois números e retorna a diferença
-3. **Multiplica** – recebe dois números e retorna o produto
-4. **Divide** – recebe dois números e retorna o quociente
-5. **MostraResultado** – recebe dois números e exibe no console o resultado de todas as operações
-
-O formato do `console.log` segue o padrão:
-
-```js
-console.log([nome_da_operacao] entre ${num1} e ${num2}, fn(num1, num2))
-```
+* Consolidar o aprendizado em JavaScript
+* Praticar conceitos fundamentais da linguagem
+* Criar uma base sólida para desenvolvimento **Front-end** e **Full Stack**
+* Servir como material de consulta e portfólio
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-* JavaScript (ES6)
+* JavaScript (ES6+)
+* Node.js (para execução dos arquivos)
 
 ---
 
-## ▶️ Como Executar o Projeto
+## ▶️ Como Executar os Códigos
 
-1. Clone este repositório:
+1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/seu-usuario/seu-repositorio-js.git
 ```
 
 2. Acesse a pasta do projeto:
 
 ```bash
-cd seu-repositorio
+cd seu-repositorio-js
 ```
 
-3. Execute o arquivo JavaScript:
+3. Execute qualquer arquivo JavaScript com:
 
 ```bash
-node funcoes-matematicas.js
+node nome-do-arquivo.js
 ```
 
-> 💡 Certifique-se de ter o **Node.js** instalado em sua máquina.
+> 💡 É necessário ter o **Node.js** instalado em sua máquina.
 
 ---
 
-## 📂 Estrutura do Projeto
+## 📂 Estrutura do Repositório
 
 ```
-📁 funcoes-matematicas-js
- ┣ 📄 funcoes-matematicas.js
+📁 javascript
+ ┣ 📂 exercicios
+ ┃ ┣ 📄 funcoes.js
+ ┃ ┣ 📄 operadores.js
+ ┃ ┗ 📄 condicionais.js
+ ┣ 📂 projetos
+ ┃ ┣ 📂 projeto-lista-tarefas
+ ┃ ┗ 📂 projeto-calculadora
  ┗ 📄 README.md
 ```
 
----
-
-## 🧠 Aprendizados
-
-Com este exercício é possível compreender:
-
-* Como declarar e reutilizar funções
-* Como passar argumentos para funções
-* Como organizar funções com responsabilidades bem definidas
-* Como exibir informações formatadas no console
+*(A estrutura pode evoluir conforme novos conteúdos forem adicionados.)*
 
 ---
 
-## 🚀 Próximos Passos 
+## 🧠 Conteúdos Abordados
 
-* Adicionar validação para divisão por zero
-* Refatorar utilizando **arrow functions**
-* Criar testes simples
-* Integrar o código a uma interface HTML
+* Variáveis (`var`, `let`, `const`)
+* Funções tradicionais e arrow functions
+* Operadores
+* Condicionais (`if`, `else`, `switch`)
+* Laços de repetição
+* Arrays e objetos
+* Manipulação básica do DOM
+
+---
+
+## 🚀 Próximos Passos
+
+* Desenvolver projetos mais completos
+* Integrar JavaScript com HTML e CSS
+* Estudar frameworks e bibliotecas
+* Aplicar boas práticas e padrões de código
 
 ---
 
 ## 👩‍💻 Autora
 
-Desenvolvido por **Déborah Cristina Melo Lino Coelho**
-Estudante de programação com foco em desenvolvimento Full Stack.
+**Déborah Cristina Melo Lino Coelho**
+Estudante de programação com foco em Desenvolvimento Full Stack.
 
 ---
 
-✨ Projeto desenvolvido para fins educacionais e prática de JavaScript.
+✨ Repositório desenvolvido para fins educacionais e evolução contínua em JavaScript.
