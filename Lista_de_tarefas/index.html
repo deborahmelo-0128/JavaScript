@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title> Minha Lista de Tarefas </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOGIN -->
+  <section class="card" id="loginScreen">
+    <h1><br>Lista de Tarefas</h1>
+
+    <input type="text" placeholder="login">
+    <input type="password" placeholder="password">
+
+    <button class="btn-primary">Entrar</button>
+    <button class="btn-secondary" onclick="entrar()">Criar conta</button>
+  </section>
+
+  <!-- APP -->
+  <section class="card hidden" id="appScreen">
+    <header>
+      <span>Seja bem-vindo</span>
+      <button class="logout" onclick="logout()">logout</button>
+    </header>
+    <div class="progresso">
+  <span id="contador"></span>
+  <div class="barra">
+    <div class="barra-progresso" id="barraProgresso"></div>
+  </div>
+</div>
+
+    <select id="filtro" onchange="renderizar()">
+      <option value="todas">Todas</option>
+      <option value="finalizadas">Finalizadas</option>
+    </select>
+
+    <div class="nova-tarefa">
+      <input id="novaTarefa" placeholder="Nova tarefa">
+      <button onclick="adicionar()">+</button>
+    </div>
+
+    <ul id="lista"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+:root {
+  --bg: #0b0f1a;
+  --card: #111827;
+  --neon: #00f5ff;
+  --neon2: #7c3aed;
+  --text: #e5e7eb;
+  --success: #22c55e;
+  --danger: #ef4444;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #111827, #020617);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+}
+
+.card {
+  width: 100%;
+  max-width: 360px;
+  background: var(--card);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0,245,255,.15);
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  color: var(--neon);
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #020617;
+  color: var(--text);
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, var(--neon), var(--neon2));
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid var(--neon2);
+  color: var(--neon2);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.logout {
+  background: none;
+  border: none;
+  color: var(--danger);
+  cursor: pointer;
+}
+
+.nova-tarefa {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.nova-tarefa button {
+  width: 48px;
+  border-radius: 10px;
+  border: none;
+  background: var(--neon);
+  color: #020617;
+  font-size: 22px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #020617;
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.concluida {
+  text-decoration: line-through;
+  color: var(--success);
+}
+.actions button {
+  background: none;
+  border: none;
+  color: var(--neon2);
+  cursor: pointer;
+  margin-left: 10px;
+}
+.actions .deletar {
+  color: var(--danger);
+}
+.actions .concluir {
+  color: var(--success);
+}
+.actions button:hover {
+  text-decoration: underline;
+}
+.acoes {
+  display: flex;
+  gap: 8px;
+}
+
+.acao-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.acao-btn:hover {
+  transform: scale(1.2);
+}
+
+.btn-concluir {
+  color: var(--success);
+}
+
+.btn-editar {
+  color: var(--neon);
+}
+
+.btn-apagar {
+  color: var(--danger);
+}
+
+.editando {
+  border: 1px dashed var(--neon);
+  background: #020617;
+}
+.editando input {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  width: 100%;
+}   
+.editando input:focus {
+  outline: none;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-conteudo {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+.modal-conteudo h2 {
+  margin-top: 0;
+  color: var(--neon);
+}
+.modal-conteudo p {
+  margin: 15px 0;
+}
+.modal-conteudo .botoes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.modal-conteudo .botoes button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.modal-conteudo .botoes .confirmar {
+  background: var(--danger);
+  color: #fff;
+}
+.modal-conteudo .botoes .cancelar {
+  background: var(--neon2);
+  color: #020617;
+}
+@media (max-width: 400px) {
+  .card {
+    padding: 20px;
+    border-radius: 15px;
+  }
+}
+@media (max-width: 320px) {
+  .nova-tarefa button {
+    width: 40px;
+    font-size: 18px;
+  }
+}
+.progresso {
+  margin-bottom: 15px;
+}
+
+.progresso span {
+  font-size: 14px;
+  color: var(--neon);
+}
+
+.barra {
+  width: 100%;
+  height: 8px;
+  background: #020617;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.barra-progresso {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--success), var(--neon));
+  transition: width 0.4s ease;
+}
+
+
+
+
