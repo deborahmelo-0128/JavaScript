@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini X</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <span>Início</span>
+  <button id="logout" onclick="logout()">Sair</button>
+</header>
+
+<div class="welcome-banner" id="welcomeBanner">
+  Bem-vindo ao Mini X 👋
+</div>
+
+<div class="container">
+
+  <!-- LOGIN -->
+  <div class="login" id="loginSection">
+    <input id="username" placeholder="@usuario" />
+    <button onclick="login()">Entrar</button>
+  </div>
+
+  <!-- PERFIL -->
+  <div class="profile hidden" id="profileSection">
+    <img id="profileAvatar" class="avatar large" />
+    <input type="file" id="avatarInput" accept="image/*" />
+    <button onclick="uploadAvatar()">Salvar foto</button>
+  </div>
+
+  <!-- POST FORM -->
+  <div class="post-form hidden" id="postForm">
+    <textarea id="postText" placeholder="O que está acontecendo?"></textarea>
+    <input type="file" id="imageInput" accept="image/*" />
+    <button onclick="addPost()">Postar</button>
+  </div>
+
+  <!-- FEED -->
+  <div class="feed" id="feed"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
